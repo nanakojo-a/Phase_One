@@ -1,0 +1,526 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --backgroundcolor: #ffffff;
+    --toplinkdefaultcolor: #E8EFF2;
+    --toplinkactivecolor: #162542;
+    --sublinkdefaultcolor: #F16718;
+    --sublinkactivecolor: #FF9B62;
+    --smalltextcolor: #7B8BAD;
+    font-size: 16px;
+}
+
+body{
+    font-family: Barlow;
+    color: var(--smalltextcolor);
+}
+
+.container{
+    margin-top: 3%;
+    padding-left: 5%;
+    padding-right:5%;
+    display: flex;
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    margin-bottom: 3em;
+}
+
+nav .top.button{
+    margin-left: auto;
+    margin-right: 0;
+}
+
+
+.container .button {
+    text-transform: uppercase;
+    text-decoration: none;
+    border-width: 1px;
+    border-style: solid;
+    padding: 14px 20px;
+    border-radius: 8px;
+}
+
+.container .top.button{
+    background-color: var(--toplinkdefaultcolor);
+    border-color: var(--toplinkdefaultcolor);
+    color: var(--toplinkactivecolor);
+}
+
+.container .top.button:active{
+    background-color: var(--toplinkactivecolor);
+    color: var(--backgroundcolor);
+    border-color: var(--toplinkactivecolor)
+}
+
+.container .sub.button{
+    background-color: var(--sublinkdefaultcolor);
+    border-color: var(--sublinkdefaultcolor);
+    color: var(--toplinkactivecolor);
+}
+
+.container .sub.button:active{
+    background-color: var(--sublinkactivecolor);
+    color: white;
+    border-color: var(--sublinkactivecolor);
+}
+
+
+
+/* headers  */
+h1,h2,h3{
+    text-transform: uppercase;
+    padding-bottom: 1.5rem;
+}
+
+h1 {
+    color: black !important;
+    font-size: 56px;
+    line-height: 56px;
+}
+
+h2 {
+    color: black !important;
+    font-size: 32px;
+    line-height: 36px;
+}
+
+h3 {
+    color: black !important;
+    font-size: 24px;
+    line-height: 28px;
+}
+
+
+
+
+/* images */
+
+.second-row .second-row-images{
+    display: inline-flex;
+}
+
+.second-row img{
+    height: 25em;
+    border-radius: 0.75em;
+}
+
+.second-row img#phone-and-keyboard{
+    
+    width: 17em;
+    margin-right: 2%;
+}
+
+.second-row img#phone-and-glass{
+    width: 30em;
+    margin-right: 8%;
+}
+
+.first-row img{
+    width: 37em;
+    border-radius: 0.75em;
+    flex-shrink: 2;
+    flex-grow: 2;
+}
+
+.third-block img{
+    margin-bottom: 2em;
+}
+
+
+
+
+
+.first-row{
+    display: flex;
+    margin-bottom: 5em;
+}
+
+
+
+
+
+
+
+.container .first-block {
+    position: relative;
+    top: 5em;
+    width: 44em;
+    margin-right: 4%;
+}
+
+.container .first-block p{
+    width: 40em;
+}
+
+.container .first-block h1{
+    width: 50%;
+}
+
+.container .first-block p{
+    margin-bottom: 2em;
+}
+
+.container .first-block a{
+    margin-right: 2em;
+}
+
+
+
+
+.container .second-row{
+    display: flex;
+    margin-bottom: 10em;
+}
+
+
+.container .second-block h2{
+    width: 8em;
+}
+
+.container .second-block {
+    position: relative;
+    top: 5em;
+    width: 25em;
+    justify-content:right
+}
+
+.container .third-block {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 5em;
+}
+
+/* .container .third-block h3{
+    /*  */
+
+
+
+
+.container .sub-one, .sub-two, .sub-three, .sub-four {
+    margin-left: 1.875em;
+    margin-right: 1.875em;
+}
+
+
+
+
+.sub-one h3, .sub-two h3, .sub-three h3, .sub-four h3{
+    width: 9em;
+}
+
+.sub-one, .sub-two, .sub-three, .sub-four{
+    width: 15em;
+}
+
+.container .main{
+    margin-bottom: 2%;
+}
+
+.corners img{
+    width: 4em;
+    height: 15em;
+}
+
+.corners #right{
+    position: absolute;
+    right: 0;
+    top: 17%;
+}
+
+.corners #left{
+    position: absolute;
+    left: 0;
+    top: 56.5em;
+}
+
+footer{    
+    text-align: center;
+}
+
+
+
+
+
+@media only screen and (min-width: 320px) and (max-width: 480px){
+
+    .container{
+        width: 70%;
+        margin: 0;
+        padding: 0;
+        /* margin-left: 1%;
+        margin-right: 1%; */
+    }
+
+    .main{
+        padding-top: 2em;
+        padding-left: 10px;
+        padding-right: 10px;;
+    }
+
+    .container .first-row{
+        display: block;
+        margin-bottom: 4%;
+    }
+
+    .container .first-row .first-block{
+        margin-bottom: 7em;
+    }
+
+    .corners{
+        display: none;
+    }
+
+    .container .second-row {
+        display: block;
+    }
+
+
+    .first-row{
+        max-width: 60%;
+    }
+    
+
+    .first-block p{
+        max-width: 80%;
+        height: auto;
+        line-height: 2em;
+    }
+
+    .first-block{
+        max-width: 25em;
+    }
+
+    .first-block span {
+        position: relative;
+        top: 1em;
+        text-align: center;
+    }
+
+    .container #sub-button-div{
+        display: flex;
+    }
+
+    .sub.button {
+        width: 22em;
+        text-align: center;
+    }
+
+    .top.button {
+        position: relative;
+        right: 0px;
+    }
+
+    .sub.button {
+        width: 43%;
+    }
+
+    .second-row{
+        max-width: 95%;
+    }
+
+    .second-block{
+        margin-top: 5%;
+        width: 100%;
+    }
+
+    .second-block p{
+        line-height: 2em;
+        height: auto;
+        max-width: 200em;
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .second-block h2{
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+
+    .third-block{
+        margin-top: 1em;
+        max-width: 100%;
+        display: block;
+    }
+
+    .third-block .sub-one, .sub-two, .sub-three, .sub-four{
+        margin-left: 0;
+        width: 100%;
+        margin-bottom: 2em;
+    }
+
+    .container .third-block p{
+        line-height: 2em;
+        min-width: 80%;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .container .third-block h3{
+        width: 8em;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .third-block .icondiv{
+        display: flex;
+        justify-content: center;
+    }
+
+
+
+
+    .first-row img{
+        width: 26.2em;
+        height: 400px;
+        position: relative;
+        left: 3%;
+    }
+
+    .second-row img {
+        display: inline-flex;
+    }
+
+    .second-row img#phone-and-keyboard{
+        width: 6.2em;
+        height: 20.75em;
+        position: relative;
+        right: 3%;
+        border-top-left-radius: 0%;
+        border-bottom-left-radius: 0%;
+    }
+    
+    .second-row img#phone-and-glass{
+        width: 17em;
+        height: 20.75em;
+        margin-right: 0;
+        padding-right: 0;
+    }
+
+    footer{
+        text-align: center;
+    }
+}
+
+
+
+
+
+@media only screen and (min-width: 480px) and (max-width: 800px){
+    .corners{
+        display: none;
+    }
+
+    p{
+        line-height: 1.5em;
+    }
+
+
+    .main{
+        width: 100%;
+    }
+
+    .first-row{
+        max-width: 80%;
+        margin-bottom: 4em;
+    }
+
+    .second-row{
+        max-width: 60%;
+    }
+    
+    .second-block{
+        min-width: 43em;
+        display: inline-flex;
+    }
+
+    .second-block h2{
+        margin-right: 1em;
+    }
+
+    .second-block p{
+        position: relative;
+        top: 1em;
+    }
+
+    #sub-button-div{
+        display: flex;
+    }
+
+    .sub.button{
+        min-width: 7em;
+    }
+
+    .first-block{
+        max-width: 60%;
+    }
+
+    .first-block p{
+        min-width: 20em;
+    }
+
+
+.first-row img{
+    position: relative;
+    top: 2em;
+    left: 4em;
+    width: 20em;
+    height: 25em;
+}
+
+#sub-button-div span{
+    position: relative;
+    top: 1em;
+}
+
+
+    .first-row .first-block p{
+        max-width: 60%;
+        line-height: 2em;
+    }
+
+    .container .second-row{
+        display: block;
+    }
+
+    .second-row .second-row-images img#phone-and-keyboard{
+        width: 15em;
+    }
+
+    .second-row .second-row-images img#phone-and-glass{
+        width: 30.5em;
+    }
+
+    .third-block{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .sub-one, .sub-two, .sub-three, .sub-four{
+        margin-bottom: 2em;
+    }
+
+    .container .third-block .sub-two h3, .sub-four h3, .sub-one h3, .sub-three h3{
+       min-width: 9em;
+    }
+
+
+    footer{
+        text-align: center;
+        max-width: 100%;
+    }
+
+}
+
