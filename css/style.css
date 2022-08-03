@@ -263,6 +263,7 @@ h3 {
 .corners img{
     width: 4.7em;
     height: 300px;
+    min-height: 300px;
     border-radius: 1em;
 }
 
