@@ -261,8 +261,9 @@ h3 {
 }
 
 .corners img{
-    width: 4em;
-    height: 15em;
+    width: 4.7em;
+    height: 12em;
+    border-radius: 1em;
 }
 
 .corners #right{
@@ -272,19 +273,19 @@ h3 {
 }
 
 .corners #right img{
-    border-top-left-radius: 20%;
-    border-bottom-left-radius: 20%;
+    border-top-right-radius: 0%;
+    border-bottom-right-radius: 0%;
 }
 
 .corners #left img{
-    border-top-right-radius: 20%;
-    border-bottom-right-radius: 20%;
+    border-top-left-radius: 0%;
+    border-bottom-left-radius: 0%;
 }
 
 .corners #left{
     position: absolute;
     left: 0;
-    top: 53.3em;
+    top: 56.3em;
 }
 
 footer{    
