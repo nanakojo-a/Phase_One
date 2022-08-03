@@ -261,9 +261,9 @@ h3 {
 }
 
 .corners img{
-    width: 4.7em;
-    /* height: 300px; */
-    min-height: 300px !important;
+    width: 80px;
+    height: 300px;
+    /* min-height: 300px !important; */
     border-radius: 1em;
 }
 
