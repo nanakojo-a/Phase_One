@@ -262,7 +262,7 @@ h3 {
 
 .corners img{
     width: 4.7em;
-    height: 12em;
+    height: 300px;
     border-radius: 1em;
 }
 
@@ -285,7 +285,7 @@ h3 {
 .corners #left{
     position: absolute;
     left: 0;
-    top: 56.3em;
+    top: 50em;
 }
 
 footer{    
