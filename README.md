@@ -4,7 +4,7 @@ HTML &amp; CSS Capstone Project
 Link to project: https://stellar-belekoy-a003c2.netlify.app/
 
 
-There are two main files in the project. First if the HTML file that contains the elements and provides the structure needed for the webpage. The HTML file in this project has been names index.html.
+There are two main files in the project. First is the HTML file that contains the elements and provides the structure needed for the webpage. The HTML file in this project has been names index.html.
 The CSS file which is also named style.css can be found within the folder named css next to the HTML file.
 The CSS is responsible for the styling of the elements and the structures within the index.html file. The CSS is linked to the HTML file by inserting the <link rel"stylesheet" href="style.css"> format into the head section of the HTML file.
 
